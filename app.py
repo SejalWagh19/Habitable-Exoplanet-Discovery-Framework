@@ -75,7 +75,7 @@ if selected_name:
     # Generate explanation
     if isinstance(prediction, float):
         prompt = generate_llm_prompt_from_row(row, prediction, esi, ar, lts)
-        genai.configure(api_key="AIzaSyBWl2dlCDSKEhJ_hZSncDA0DVfUqbTP_EA")  # Replace with your Gemini API Key
+        genai.configure(api_key="API-Key")  # Replace with your Gemini API Key
         model_llm = genai.GenerativeModel("gemini-1.5-flash")
         with st.spinner("Thinking like a cosmic AI..."):
             sleep(2)
